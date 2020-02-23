@@ -1,0 +1,7 @@
+build/*.js
+config/*.js
+src/assets
+sharegoods-ui
+src/router/modules
+plop-templates
+*.hbs

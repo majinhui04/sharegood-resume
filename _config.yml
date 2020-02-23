@@ -1,0 +1,25 @@
+# Site
+title: 马金慧的博客
+subtitle: '斯人如彩虹，遇上方知有'
+description: '马金慧'
+keywords: '前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验'
+author: Ma JinHui
+
+# Directory
+outputDir: 'dist'
+publicPath: '/'
+
+# vue.config.js
+open: true
+port: 9999
+proxy:
+## 自定义环境变量
+env:
+    APP_TS: '1'
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+    type: git
+    repo: https://github.com/majinhui04/majinhui04.github.io
+    branch: master

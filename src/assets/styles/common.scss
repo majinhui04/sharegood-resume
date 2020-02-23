@@ -1,0 +1,132 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $colorBg;
+    line-height: 1.2;
+}
+
+
+.sg-clear {
+    zoom: 1;
+}
+
+.sg-hint {
+    color: $colorGray;
+}
+
+.sg-inline {
+    display: inline;
+}
+
+.sg-block {
+    display: block;
+}
+
+.sg-inline-block {
+    display: inline-block;
+}
+
+.sg-ml4 {
+    margin-left: 4px;
+}
+
+.sg-clear:after {
+    display: block;
+    content: '  ';
+    height: 0;
+    clear: both;
+}
+
+.sg-link {
+    color: $colorBlue;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.sg-link:hover {
+    text-decoration: underline;
+    transition: all .2s ease-in-out
+}
+
+.sg-link.disable {
+    cursor: not-allowed;
+    color: rgba(10, 18, 32, .46)
+}
+
+.sg-link.disable:hover {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.sg-btn {
+    min-width: 120px;
+    white-space: nowrap;
+    padding: 0 32px;
+    line-height: 28px;
+    font-size: 14px;
+    background: none;
+    outline: 0;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: $colorBlue;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+
+    &[disabled],
+    &.disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+    }
+}
