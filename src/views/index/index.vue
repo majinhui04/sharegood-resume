@@ -1,10 +1,10 @@
 <template>
-    <div class="page page-ADemo">ADemo</div>
+    <div class="page page-Index">Index</div>
 </template>
 
 <script>
     export default {
-        name: 'ADemo',
+        name: 'Index',
         components: {},
         data() {
             return {};
@@ -22,6 +22,6 @@
     };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 
 </style>

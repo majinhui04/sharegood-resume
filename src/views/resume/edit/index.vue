@@ -1,5 +1,5 @@
 <template>
-    <div class="page page-ResumeEdit" ref="page">
+    <div class="page page-ResumeEdit" ref="page" title="ss" alt="s">
         <div class="resume-box">
             <div class="head">
                 <div class="title">个人简历</div>
@@ -239,7 +239,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .resume-box {
     background-color: #fff;
     font-size: 14px;
@@ -350,6 +350,9 @@ export default {
                     }
                 }
             }
+        }
+        .a {
+            color: red;
         }
     }
 }

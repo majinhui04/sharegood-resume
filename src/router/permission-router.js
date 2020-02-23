@@ -1,6 +1,6 @@
 const modules = {};
 const routes = [];
-const requireContext = require.context('@/router/modules', true, /\.js/);
+const requireContext = require.context('@/views', true, /router\.js/);
 const requireAll = context => {
     context.keys().forEach(key => {
         modules[key] = requireContext(key).default || requireContext(key);

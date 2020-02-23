@@ -1,38 +1,40 @@
 <template>
-    <div class="content">
-        <div class="exception-wrapper">
-            <div class="exception-img">
-                <img src="./assets/img/404.png" alt="" />
-            </div>
-            <div class="exception-main">
-                <div class="exception-code">404</div>
-                <div class="exception-message">抱歉，你访问的页面不存在</div>
-                <div class="exception-action">
-                    <el-button type="primary" @click="goHome">返回首页</el-button>
-                </div>
-            </div>
+  <div class="content">
+    <div class="exception-wrapper">
+      <div class="exception-img">
+        <img src="./assets/img/404.png"
+             alt="" />
+      </div>
+      <div class="exception-main">
+        <div class="exception-code">404</div>
+        <div class="exception-message">抱歉，你访问的页面不存在</div>
+        <div class="exception-action">
+          <el-button type="primary"
+                     @click="goHome">返回首页</el-button>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Exception',
-    props: {},
-    data() {
-        return {};
-    },
-    created() {},
-    mounted() {},
-    methods: {
-        goHome() {
-            this.$router.push('/');
-        }
+  name: 'Exception',
+  props: {},
+  data () {
+    return {};
+  },
+  created () { },
+  mounted () { },
+  methods: {
+    goHome () {
+      this.$router.push('/');
     }
+  }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .exception-wrapper {
     width: 600px;
     margin: 0 auto;

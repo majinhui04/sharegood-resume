@@ -55,7 +55,7 @@ module.exports = {
             {
                 force: true,
                 type: 'add',
-                path: `src/router/modules/${name}/index.js`,
+                path: `src/views/${name}/router.js`,
                 templateFile: 'plop-templates/route/index.hbs',
                 data: {
                     name: name,

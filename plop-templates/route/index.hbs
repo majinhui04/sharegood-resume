@@ -1,11 +1,12 @@
+/* eslint-disable */
 const {{ properCase name }} = () => import(/* webpackChunkName: "{{ properCase name }}" */ '@/views/{{ name }}');
 export default {
-    path: '/{{ name }}',
-    name: '{{ properCase name }}',
-    component: {{ properCase name }},
-    meta: {
-    title: '{{ title }}',
-    noAuth: {{ noAuth }},
-    keepAlive: {{ keepAlive }}
-    }
+path: '/{{ formatPath name }}',
+name: '{{ properCase name }}',
+component: {{ properCase name }},
+meta: {
+title: '{{ title }}',
+noAuth: {{ noAuth }},
+keepAlive: {{ keepAlive }}
+}
 };
