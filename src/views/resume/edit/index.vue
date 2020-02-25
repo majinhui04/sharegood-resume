@@ -1,5 +1,5 @@
 <template>
-    <div class="page page-ResumeEdit" ref="page" title="ss" alt="s">
+    <div class="page page-ResumeEdit" ref="page">
         <div class="resume-box">
             <div class="head">
                 <div class="title">个人简历</div>
@@ -15,24 +15,36 @@
                                 <div class="list">
                                     <div class="item">
                                         <div class="label">姓名</div>
-                                        <div class="placeholder">:<span>老马</span></div>
+                                        <div class="placeholder">
+                                            :<span>老马</span>
+                                        </div>
                                     </div>
                                     <div class="item">
                                         <div class="label">工作年限</div>
-                                        <div class="placeholder">:<span>4年</span></div>
+                                        <div class="placeholder">
+                                            :<span>4年</span>
+                                        </div>
                                     </div>
                                     <div class="item">
                                         <div class="label">联系电话</div>
-                                        <div class="placeholder">:<span>12345656789</span></div>
+                                        <div class="placeholder">
+                                            :<span>12345656789</span>
+                                        </div>
                                     </div>
                                     <div class="item">
                                         <div class="label">邮箱</div>
-                                        <div class="placeholder">:<span>12345656789</span></div>
+                                        <div class="placeholder">
+                                            :<span>12345656789</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="photo">
-                                <img src="https://www.qmjianli.com/images/edit/man.png" alt="" srcset="" />
+                                <img
+                                    src="https://www.qmjianli.com/images/edit/man.png"
+                                    alt=""
+                                    srcset=""
+                                />
                             </div>
                         </div>
                     </div>
@@ -216,15 +228,19 @@
                 </div>
             </div>
         </div>
+
+        <!--Drawer-->
+        <Drawer></Drawer>
     </div>
 </template>
 
 <script>
+import Drawer from './drawer'
 export default {
     name: 'ResumeEdit',
-    components: {},
+    components: { Drawer },
     data() {
-        return {};
+        return {}
     },
     computed: {},
     watch: {},
@@ -232,11 +248,11 @@ export default {
     mounted() {},
     methods: {
         download() {
-            const user = 'ss';
-            this.$pdf(this.$refs.page, user);
+            const user = 'ss'
+            this.$pdf(this.$refs.page, user)
         }
     }
-};
+}
 </script>
 
 <style lang="less" scoped>

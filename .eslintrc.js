@@ -13,10 +13,10 @@ module.exports = {
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        "vue/no-use-v-if-with-v-for":0,
-        "vue/no-parsing-error":1,
-        "vue/no-unused-vars":1,
-        "vue/require-v-for-key":1,
+        "vue/no-use-v-if-with-v-for": 0,
+        "vue/no-parsing-error": 1,
+        "vue/no-unused-vars": 1,
+        "vue/require-v-for-key": 1,
         "vue/html-indent": [1, 4, {
             "attribute": 1,
             "closeBracket": 0,
@@ -32,14 +32,14 @@ module.exports = {
         }],
 
         'vue/name-property-casing': [1, 'PascalCase'],
-        'standard/object-curly-even-spacing':0,
-        'no-new-func':1,
+        'standard/object-curly-even-spacing': 0,
+        'no-new-func': 1,
         'accessor-pairs': 2,
         'arrow-spacing': [2, {
             'before': true,
             'after': true
         }],
-        'no-mixed-operators':1,
+        'no-mixed-operators': 1,
         'block-spacing': [2, 'always'],
         'brace-style': [2, '1tbs', {
             'allowSingleLine': true
@@ -56,7 +56,7 @@ module.exports = {
         'constructor-super': 2,
         'curly': [2, 'multi-line'],
         'dot-location': [2, 'property'],
-        'eol-last': 1,
+        'eol-last': 0,
         'eqeqeq': [2, 'allow-null'],
         'generator-star-spacing': [2, {
             'before': true,

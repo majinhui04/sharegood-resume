@@ -4,6 +4,7 @@ import router from './router';
 import libs from './third-party';
 // import './router/intercept'
 import App from './app.vue';
+import './styles/index.less';
 import './styles/app.less';
 console.log('libs', libs);
 
